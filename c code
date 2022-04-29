@@ -1,0 +1,135 @@
+#include <stdio.h>
+
+int main()
+{
+    char i, year[10], plat[10];
+    int lang, genre;
+printf("Do you want to watch a movie or a series. \nInput 'S' for series and 'M' for movie: ");
+scanf("%c", &i);
+if (i=='M')
+{
+   printf("Please choose your language.\nEnter 1 for hindi and 2 for english: ");
+   scanf("%d", &lang);
+   if(lang==1)
+   {
+       printf("Please choose whether you want to see a movie before or after 2015.\n Enter 'B' for before and 'A' for after: ");
+       scanf("%s", year);
+       if(year[0]=='B')
+       {
+           printf("Please choose the genre of your choice.\nInsert 1 for action\nInsert 2 for Comedy\nInsert 3 for horror\nInsert 4 for romance\n");
+           scanf("%d", &genre);
+           switch (genre)
+           {
+               case 1: printf("Check out Madras Café, Gangs of Wasseypur"); break;
+               case 2: printf("Check out 3 Idiots, Chennai Express");break;
+               case 3: printf("Check out Trip to Bhangarh, Raaz 3D");break;
+               case 4: printf("Check out Ashiqui 2, 2 States");break;
+           }
+       }
+       else if(year[0]=='A')
+       {
+           printf("Please choose the genre of your choice.\nInsert 1 for action\nInsert 2 for Comedy\nInsert 3 for horror\nInsert 4 for romance\n");
+           scanf("%d", &genre);
+           switch (genre)
+           {
+               case 1: printf("Check out URI: The Surgical Strike, Simmba");break;
+               case 2: printf("Check out Dream girl, Great Grand Masti");break;
+               case 3: printf("Check out Tumbbad, Roohi");break;
+               case 4: printf("Check out Ok Jaanu, Loveyatri");break;
+           }
+       }
+   }
+   else if(lang==2)
+   {
+       printf("Please choose whether you want to see a movie before or after 2015.\n Enter 'B' for before and 'A' for after: ");
+       scanf("%s", year);
+       if(year[0]=='B')
+       {
+           printf("Please choose the genre of your choice.\nInsert 1 for action\nInsert 2 for Comedy\nInsert 3 for horror\nInsert 4 for romance\n");
+           scanf("%d", &genre);
+           switch (genre)
+           {
+               case 1: printf("Check out Kingsman: The Secret Service, The Hunger Games"); break;
+               case 2: printf("Check out The Dictator, The Hangover");break;
+               case 3: printf("Check out Curse of Chuckey, The Babadook");break;
+               case 4: printf("Check out The fault in our Stars, Stuck in Love");break;
+           }
+       }
+       else if(year[0]=='A')
+       {
+           printf("Please choose the genre of your choice.\nInsert 1 for action\nInsert 2 for Comedy\nInsert 3 for horror\nInsert 4 for romance\n");
+           scanf("%d", &genre);
+           switch (genre)
+           {
+               case 1: printf("Check out Birds of Prey, Wonder Woman");break;
+               case 2: printf("Check out Central Intelligence, Johnny English Strikes Again");break;
+               case 3: printf("Check out Annabelle Creation, Bird Box");break;
+               case 4: printf("Check out Me Before You, Call me by Your Name");break;
+           }
+       }
+   }
+}
+else if(i=='S')
+{
+    printf("Please choose your preffered platform.\nEnter 'A' for Amazon Prime or 'N' for Netflix: ");
+    scanf("%s", plat);
+    if(plat[0]=='A')
+    {
+        printf("Please choose your language.\nEnter 1 for hindi and 2 for english: ");
+        scanf("%d", &lang);
+        if(lang==1)
+        {
+           printf("Please choose the genre of your choice.\nInsert 1 for action\nInsert 2 for Comedy\nInsert 3 for horror\nInsert 4 for romance\n");
+           scanf("%d", &genre);
+           switch (genre)
+           {
+               case 1: printf("Check out The Family Man");break;
+               case 2: printf("Check out Panchayat");break;
+               case 3: printf("Check out Typewriter");break;
+               case 4: printf("Check out Bandish Bandits");break;
+           }
+        }
+        else if(lang==2)
+        {
+             printf("Please choose the genre of your choice.\nInsert 1 for action\nInsert 2 for Comedy\nInsert 3 for horror\nInsert 4 for romance\n");
+           scanf("%d", &genre);
+           switch (genre)
+           {
+               case 1: printf("Check out The Boys");break;
+               case 2: printf("Check out The Office");break;
+               case 3: printf("Check out Supernatural");break;
+               case 4: printf("Check out The Vampire Diaries");break;
+           }
+        }
+    }
+    else if(plat[0]=='N')
+    {
+        printf("Please choose your language.\nEnter 1 for hindi and 2 for english: ");
+        scanf("%d", &lang);
+        if(lang==1)
+        {
+           printf("Please choose the genre of your choice.\nInsert 1 for action\nInsert 2 for Comedy\nInsert 3 for horror\nInsert 4 for romance\n");
+           scanf("%d", &genre);
+           switch (genre)
+           {
+               case 1: printf("Check out Sacred Games");break;
+               case 2: printf("Check out Ladies Up");break;
+               case 3: printf("Check out Ghoul");break;
+               case 4: printf("Check out Mismatched");break;
+           }
+        }
+        else if(lang==2)
+        {
+             printf("Please choose the genre of your choice.\nInsert 1 for action\nInsert 2 for Comedy\nInsert 3 for horror\nInsert 4 for romance\n");
+           scanf("%d", &genre);
+           switch (genre)
+           {
+               case 1: printf("Check out The Walking Dead");break;
+               case 2: printf("Check out Friends");break;
+               case 3: printf("Check out Stranger Things");break;
+               case 4: printf("Check out Accidentally in Love");break;
+           }
+        }
+    }
+}
+}
